@@ -7,7 +7,7 @@ const Home = ({ dark }) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://localhost:5000/api/user');
+        const response = await axios.get('https://portfolio-backend-phi-one.vercel.app/api/user');
         setUserData(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
